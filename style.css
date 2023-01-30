@@ -1,0 +1,14 @@
+* {
+  padding: 0px;
+  margin: 0;
+}
+
+.card {
+  text-align: center;
+  border: 5px solid rgb(77, 201, 223);
+  font-size: 48px;
+}
+.input_text {
+  font-size: 48px;
+  text-align: center;
+}
