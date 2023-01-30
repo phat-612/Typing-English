@@ -2,13 +2,36 @@
   padding: 0px;
   margin: 0;
 }
-
+.hide {
+  display: none !important;
+}
+.btn_func input {
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #bfdb38;
+}
+.main_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .card {
   text-align: center;
   border: 5px solid rgb(77, 201, 223);
   font-size: 48px;
+  max-width: 960px;
+  border-radius: 12px;
+}
+.word_en {
+  color: #5818c0;
 }
 .input_text {
   font-size: 48px;
   text-align: center;
+  border: none;
+  border-top: 5px solid #00425a;
+}
+.input_text:focus {
+  outline: none;
 }
