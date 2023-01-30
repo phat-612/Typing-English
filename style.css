@@ -11,12 +11,26 @@
   border-radius: 8px;
   background-color: #bfdb38;
 }
+.info {
+  font-size: 32px;
+}
+.info #time {
+  position: absolute;
+  top: -40px;
+  left: 0px;
+}
+.info #scores {
+  position: absolute;
+  top: -40px;
+  right: 0px;
+}
 .main_card {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .card {
+  position: relative;
   text-align: center;
   border: 5px solid rgb(77, 201, 223);
   font-size: 48px;
