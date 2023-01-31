@@ -2,6 +2,7 @@
 const btnShowEn = document.getElementById("btn_show_en");
 const btnShowVi = document.getElementById("btn_show_vi");
 const btnShowPro = document.getElementById("btn_show_pro");
+const btnRepeat = document.getElementById("btn_repeat");
 const time = document.getElementById("time");
 const scores = document.getElementById("scores");
 const word_en = document.getElementById("word_en");
@@ -29,7 +30,6 @@ function check_input() {
 }
 
 function hideElement(ele) {
-  console.log(this);
   if (ele.classList.contains("hide")) {
     ele.classList.remove("hide");
   } else {
@@ -67,4 +67,15 @@ btnShowVi.addEventListener("click", () => {
 });
 btnShowPro.addEventListener("click", () => {
   hideElement(word_pro);
+});
+btnRepeat.addEventListener("click", () => {
+  repeat = !repeat;
+  if (btnRepeat.classList.contains("active")) {
+    btnRepeat.classList.remove("active");
+    btnRepeat.classList.add("not_active");
+  } else {
+    btnRepeat.classList.remove("not_active");
+    btnRepeat.classList.add("active");
+  }
+  console.log(repeat);
 });

@@ -5,7 +5,14 @@
 .hide {
   display: none !important;
 }
+.active {
+  background-color: #bfdb38 !important;
+}
+.not_active {
+  background-color: #db3838 !important;
+}
 .btn_func input {
+  min-width: 72px;
   text-align: center;
   padding: 8px;
   border-radius: 8px;
@@ -16,12 +23,12 @@
 }
 .info #time {
   position: absolute;
-  top: -40px;
+  top: 100%;
   left: 0px;
 }
 .info #scores {
   position: absolute;
-  top: -40px;
+  top: 100%;
   right: 0px;
 }
 .main_card {

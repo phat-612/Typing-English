@@ -1,3 +1,5 @@
+var repeat = false;
+var appeared = [];
 const list_word = [
   ["pen", "bút mực", "/pen/"],
   ["pencil", "bút chì", "/ˈpensl/"],
@@ -1781,6 +1783,15 @@ const list_word = [
 
 function show_word() {
   let index = Math.floor(Math.random() * list_word.length);
+  if (repeat) {
+    if (appeared.length == list_word.length) {
+      appeared = [];
+    }
+    while (appeared.includes(index)) {
+      index = Math.floor(Math.random() * list_word.length);
+    }
+    appeared.push(index);
+  }
   word_en.innerText = list_word[index][0];
   word_vi.innerText = list_word[index][1];
   word_pro.innerText = list_word[index][2];
